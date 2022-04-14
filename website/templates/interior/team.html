@@ -1,0 +1,162 @@
+{% extends "interior/base.html" %}
+{% block title %}Team{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+  .important {
+    color: #336699;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="site-blocks-cover overlay" style="background-image: url(  {{url_for("static" , filename="interior/images/hero_bg_1.jpg" )}} );" data-aos="fade" data-stellar-background-ratio="0.5"
+  id="home-section">
+  <div class="container">
+    <div class="row align-items-center text-center justify-content-center">
+      <div class="col-md-8">
+        <!-- <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="play-button d-block">
+                <span class="icon-play"></span>
+            </a> -->
+        <h1 class="text-uppercase">Team</h1>
+        <span class="sub-text mb-3 d-block"><em>Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quisquam molestiae ipsam, atque.</em></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-section" id="our-team-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center">
+        <span class="sub-title">Meet Our Team</span>
+        <h2 class="font-weight-bold text-black">Our Team</h2>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, explicabo, quasi. Magni
+          deserunt sunt labore.</p>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_1.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>Cloe Marena</h2>
+          <span class="sub-title d-block mb-3">Architect</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_2.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>John Rooster</h2>
+          <span class="sub-title d-block mb-3">Designer</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_3.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>Will Turner</h2>
+          <span class="sub-title d-block mb-3">Designer</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_4.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>Nicolas Stainer</h2>
+          <span class="sub-title d-block mb-3">Engineer</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_5.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>George Brook</h2>
+          <span class="sub-title d-block mb-3">Architect</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="person">
+          <div class="bio-img">
+            <figure>
+              <img src={{url_for("static", filename="interior/images/person_6.jpg" )}} alt="Image" class="img-fluid">
+            </figure>
+            <div class="social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+          </div>
+          <h2>Emely Hopson</h2>
+          <span class="sub-title d-block mb-3">Designer</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+            perspiciatis ipsa modi accusantium repellat.</p>
+
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+{% endblock %}
